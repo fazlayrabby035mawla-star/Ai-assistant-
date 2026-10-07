@@ -1,0 +1,7 @@
+{
+  "name": "DayCatch - Daily Briefing & Call Assistant",
+  "description": "An AI-powered mobile assistant app to catch up on unread Gmail emails, review WhatsApp messages, make quick phone calls, and see everything you missed today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

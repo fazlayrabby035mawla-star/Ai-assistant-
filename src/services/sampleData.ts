@@ -1,0 +1,121 @@
+import type { CallRecord, WhatsAppMessage } from '../types';
+
+export const INITIAL_CALL_RECORDS: CallRecord[] = [
+  {
+    id: 'call-1',
+    name: 'Marcus Vance (Tech Lead)',
+    phoneNumber: '+15552348901',
+    type: 'missed',
+    timestamp: 'Today, 2:18 PM',
+    timeAgo: '45 mins ago',
+    isMissedToday: true,
+    notes: 'Urgent demo sync. Tried calling twice.',
+  },
+  {
+    id: 'call-2',
+    name: 'Mom',
+    phoneNumber: '+15558901234',
+    type: 'missed',
+    timestamp: 'Today, 12:45 PM',
+    timeAgo: '2 hrs ago',
+    isMissedToday: true,
+    notes: 'Family check-in.',
+  },
+  {
+    id: 'call-3',
+    name: 'City Health Clinic',
+    phoneNumber: '+15557823490',
+    type: 'incoming',
+    timestamp: 'Today, 10:15 AM',
+    timeAgo: '4 hrs ago',
+    duration: '2 min 14 sec',
+    isMissedToday: false,
+    notes: 'Confirmed appointment for tomorrow.',
+  },
+  {
+    id: 'call-4',
+    name: 'Apex Cloud Support',
+    phoneNumber: '+18004129988',
+    type: 'missed',
+    timestamp: 'Today, 9:30 AM',
+    timeAgo: '5 hrs ago',
+    isMissedToday: true,
+    notes: 'Billing verification desk callback.',
+  },
+  {
+    id: 'call-5',
+    name: 'Alex Rivera',
+    phoneNumber: '+15554321100',
+    type: 'outgoing',
+    timestamp: 'Yesterday, 6:15 PM',
+    timeAgo: 'Yesterday',
+    duration: '8 min 30 sec',
+    isMissedToday: false,
+  },
+];
+
+export const INITIAL_WHATSAPP_MESSAGES: WhatsAppMessage[] = [
+  {
+    id: 'wa-1',
+    contactName: 'Marcus Vance',
+    phoneNumber: '+15552348901',
+    preview: 'Hey Fazlay, sent you an urgent email too! Can we jump on a quick call before 4 PM demo?',
+    timestamp: 'Today, 2:20 PM',
+    unread: true,
+    isToday: true,
+    urgent: true,
+    messages: [
+      { sender: 'them', text: 'Hey Fazlay!', time: '2:16 PM' },
+      { sender: 'them', text: 'The VP moved the client demo to 4 PM.', time: '2:17 PM' },
+      { sender: 'them', text: 'Sent you an email too. Can we jump on a quick call before 4 PM demo?', time: '2:20 PM' },
+    ],
+  },
+  {
+    id: 'wa-2',
+    contactName: 'Mom',
+    phoneNumber: '+15558901234',
+    preview: 'Call me when you are free today sweetie! Did you eat lunch?',
+    timestamp: 'Today, 12:50 PM',
+    unread: true,
+    isToday: true,
+    urgent: false,
+    messages: [
+      { sender: 'them', text: 'Call me when you are free today sweetie! Did you eat lunch?', time: '12:50 PM' },
+    ],
+  },
+  {
+    id: 'wa-3',
+    contactName: 'David (Mobile Dev)',
+    phoneNumber: '+15556718822',
+    preview: 'Android APK build is compiling cleanly with the new service worker & DTMF dialer!',
+    timestamp: 'Today, 11:10 AM',
+    unread: true,
+    isToday: true,
+    urgent: false,
+    messages: [
+      { sender: 'them', text: 'Android APK build is compiling cleanly with the new service worker & DTMF dialer!', time: '11:10 AM' },
+    ],
+  },
+  {
+    id: 'wa-4',
+    contactName: 'Alex Rivera',
+    phoneNumber: '+15554321100',
+    preview: 'Sounds great, see you tomorrow for lunch!',
+    timestamp: 'Today, 8:40 AM',
+    unread: false,
+    isToday: true,
+    urgent: false,
+    messages: [
+      { sender: 'me', text: 'Are we still on for lunch tomorrow?', time: '8:30 AM' },
+      { sender: 'them', text: 'Sounds great, see you tomorrow for lunch!', time: '8:40 AM' },
+    ],
+  },
+];
+
+export const QUICK_WHATSAPP_TEMPLATES = [
+  "Hey! I saw your message. Give me 5 minutes and I'll call you right back.",
+  "Got it! In a meeting right now, will review and get back to you shortly.",
+  "Thanks for the update. Everything looks good on my end!",
+  "Can you call me on my direct line whenever you are free?",
+  "Received! Working on this now.",
+];
